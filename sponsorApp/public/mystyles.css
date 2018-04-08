@@ -1,0 +1,56 @@
+.myBtn {
+    background-color: orange;
+}
+
+#logoimg {
+  width: 70%;
+  height: 70%;
+  margin-left:190px;
+  }
+
+.btnRight {
+  margin-left: 8px;
+}
+
+.initFormLab {
+  font-weight: bold;
+}
+
+.initForm {
+  width: 100%;
+  padding: 15px;
+}
+
+.navbar {
+  padding: 20px;
+}
+
+.detaylar {
+  padding: 30px;
+}
+
+.logoImg {
+  width: 20%;
+  height: 20%;
+}
+
+.alanli {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+body {
+  background-color: #F6FAFD
+}
+
+.teklif {
+  width: 60%;
+}
+
+.teklifleriGor {
+  padding: 50px;
+}
+
+#folder {
+  font-size: 120%;
+}

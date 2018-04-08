@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sponsorunu Bul</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mystyles.css">
+  </head>
+  <body>
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDMlOUp9EIEgzVT2dC84L99QCJ6KJBzNX8",
+      authDomain: "sponsorunubul.firebaseapp.com",
+      databaseURL: "https://sponsorunubul.firebaseio.com",
+      projectId: "sponsorunubul",
+      storageBucket: "sponsorunubul.appspot.com",
+      messagingSenderId: "1055041561983"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color: #ffc068;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="kurum.html" style="margin-left:20%">Sponsorunu Bul</a>
+    <ul class="navbar-nav ml-auto" style="margin-right:20%">
+            <li class="nav-item active">
+                <a class="nav-link" href="kurum.html">Teklifleri Gör</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kurumdetay.html">Kurum Detayları</a>
+            </li>
+            <li class="nav-item active">
+                <button type="button" name="button" class="btn btn-primary" id="logout">Log out</button>
+            </li>
+        </ul>
+  </div>
+</nav>
+
+<br>
+<div class="container-fluid teklifleriGor">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 bilgiler">
+      <h3 id="name"></h3>
+      <h4 id="org"></h4>
+      <h4 id="loc"></h4>
+      <h4 id="num"></h4>
+      <h4 id="desc"></h4>
+      <a href="#" id="folder"><p id="folder">Etkinlikci Dosyasi</p></a>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div id="pastMessages">
+        <h3>Onceki Mesajlar</h3><br>
+      </div>
+      <form class="" action="index.html" method="post">
+        <div class="form-group">
+          <textarea name="name" rows="8" cols="80" id="response" placeholder="cevap yaz" class="form-control"></textarea>
+        </div>
+          <button type="button" name="button" class="btn btn-primary" id="subres">Cevap yaz</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="proposal.js">
+
+  </script>
+  </body>
+</html>

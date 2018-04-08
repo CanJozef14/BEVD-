@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&subset=latin-ext');
+*{
+				margin:0;
+				padding:0;
+				box-sizing:border-box
+}
+html,body{
+				height:100%;
+				background:#fff
+}
+a{
+				text-decoration:none;
+				cursor:pointer;
+				color:#007bff
+}
+.head{
+    background:#007bff;
+    width:100%;
+    padding:15px 30px;
+    text-align:left
+}
+#header{
+				width:100%;
+				color:#fff;
+                                padding:20px;
+				background:url('/Spoonsor/sources/graphics/handshake.png') no-repeat fixed;
+                                background-size:100% 100%
+}
+.head img{
+				width:10%
+}
+.head h3{
+    font:bold 25px 'Noto Sans'
+}
+#slogan{
+				width:100%;
+				text-align:center
+}
+#header h1{
+				font:bold 35px 'Noto Sans'
+}
+#header a{
+				margin:25px 15px;
+				background:#007bff;
+				padding:15px;
+				font:30px 'Noto Sans';
+				color:#fff;
+				border-radius:10px;
+				box-shadow:inset 0px 0px 30px 5px rgba(50,0,50,0.5);
+				transition:background 250ms;
+				display:inline-block
+}
+.p{
+				width:60%;
+				text-align:left;
+				margin:75px auto
+}
+h2{
+				font:20px 'Noto Sans';
+                                color:#007bbf;
+                                text-align:center
+}
+.p p{
+    font:20px 'Noto Sans'
+}
+.img{
+				background:#fff no-repeat fixed;
+				width:100%;
+				height:540px
+}
+.form{
+    background:#f5f5f5;
+    border-radius:4px;
+    padding:60px 25px;
+    width:30%;
+    margin:15px;
+    display:inline-block
+}
+.form h2{
+    font:bold 23px 'Noto Sans';
+    color:#007bff
+}
+#up{
+				position:fixed;
+				right:15px;
+				bottom:15px;
+				display:none;
+				width:75px;
+				height:75px;
+				opacity:0.8;
+				cursor:pointer;
+				transition:opacity 250ms
+}
+input:not(.r),button,textarea{
+				border:1px solid #999;
+                                width:100%;
+				font:15px 'Noto Sans';
+				border-radius:3px;
+				padding:7px 10px;
+				background:#fff;
+                                margin:8px auto
+}
+#footer{
+				width:100%;
+				padding:20px;
+				font:12px 'Noto Sans';
+				background:#000;
+				color:#fff;
+				border-bottom:1px solid #007bff
+}
+#footer p{
+				display:inline-block;
+				width:40%
+}
+#footer p:nth-of-type(2){
+				text-align:right;
+				float:right
+}
+button{
+    border-color:#007bff;
+    color:#007bff
+}
+span{
+    color:#000;
+    font:15px 'Noto Sans'
+}
+#marka{
+    margin:20px auto;
+    width:1400px
+}

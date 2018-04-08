@@ -1,0 +1,33 @@
+$(document).ready(function(){
+				$(document).scroll(function(){
+								if($(this).scrollTop() > $('#header').height()){
+												$('#up').show();
+								}else{
+												$('#up').hide();
+								}
+				});
+				$('#up').click(function(){
+								$('html,body').animate({
+												scrollTop:0
+								});
+				});
+                                $('#marka').owlCarousel({
+                                    loop:true,
+                                    margin:50,
+                                    stagePadding:200,
+                                    nav:false,
+                                    items:3,
+                                    responsive:{
+                                        0:{
+                                            items:1
+                                        },
+                                        600:{
+                                            items:3
+                                        },
+                                        1000:{
+                                            items:5
+                                        }
+                                    }
+                                });
+                                $('.form:nth-of-type(2)').height($('.form:first-of-type').height());
+});

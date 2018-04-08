@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sponsorunu Bul</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="sources/styles/main.css">
+  </head>
+  <body>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDMlOUp9EIEgzVT2dC84L99QCJ6KJBzNX8",
+    authDomain: "sponsorunubul.firebaseapp.com",
+    databaseURL: "https://sponsorunubul.firebaseio.com",
+    projectId: "sponsorunubul",
+    storageBucket: "sponsorunubul.appspot.com",
+    messagingSenderId: "1055041561983"
+  };
+  firebase.initializeApp(config);
+</script>
+  <div class="head">
+                <img src="sources/graphics/logo.png" alt="Spoonsor">
+            </div>
+            <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+
+        </div>
+        <div class="col-xs-12 col-md-6 initForm">
+          <form class="" action="index.html" method="post">
+            <div class="form-group">
+              <label for="uname" class="initFormLab">Kullanıcı Adı/Şirket Adı</label>
+              <input type="text" name="" value="" id="uname" class="form-control" placeholder="Kullanıcı Adı/Şirket Adı">
+            </div>
+            <div class="form-group">
+              <label for="email" class="initFormLab">E-mail</label>
+              <input type="email" name="" value="" id="email" placeholder="E-mail" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="tel" class="initFormLab">Telefon Numarası</label>
+              <input type="text" name="" value="" placeholder="telefon Numarası" id="tel" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="password" class="initFormLab">Şifre</label>
+              <input type="password" name="" value="" class="form-control" id="password">
+            </div>
+            <div class="form-group">
+              <label class="custom-control custom-radio">
+                <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Etkinlikçi</span>
+              </label>
+              <label class="custom-control custom-radio">
+                <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Kurum</span>
+              </label>
+            </div>
+          </form>
+          <button type="button" name="button" class="btn btn-outline-warning" id="signup">Kayıt Ol</button>
+
+          <br><br>
+          <div class="alert alert-danger hidden" style="display: none" id="loginAlert">
+            <p id="loginErr"></p>
+          </div>
+          <br><br>
+        </div>
+        <div class="col-xs-12 col-md-6 initForm">
+          <form class="" action="index.html" method="post">
+            <div class="form-group">
+              <label for="email2" class="initFormLab">E-mail</label>
+              <input type="email2" name="" value="" id="email2" placeholder="E-mail" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="password2" class="initFormLab">Şifre</label>
+              <input type="password" name="" value="" class="form-control" id="password2">
+            </div>
+
+          </form>
+          <button type="button" name="button" class="btn btn-outline-success btnRight" id="login">Giriş Yap</button>
+          <br><br>
+          <div class="alert alert-danger hidden" style="display: none" id="loginAlert">
+            <p id="loginErr"></p>
+          </div>
+          <br><br>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="head" style="color:#fff;text-align:center">
+                <h3>SPONSOR BULMANIN</h3>
+                <h3>EN KOLAY</h3>
+                <h3>YOLU</h3>
+            </div>
+
+            <div id="marka" class="owl-carousel owl-theme">
+               <img src="sources/graphics/1.png" alt="">
+               <img src="sources/graphics/2.png" alt="">
+               <img src="sources/graphics/3.png" alt="">
+               <img src="sources/graphics/4.png" alt="">
+               <img src="sources/graphics/5.png" alt="">
+               <img src="sources/graphics/6.png" alt="">
+           </div>
+
+           <div id="footer">
+		<p>
+			Facebook: <a href="#">Spoonsor App</a> <br>
+			Instagram: <a href="#">@spoonsorapp</a> <br>
+			Linkedin: <a href="#">Spoonsor</a>
+		</p>
+		<p>
+			All Rights Reserved &copy; <br>
+                        Telefon: 0 507 664 49 89 <br>
+                        E-Posta: hello@spoonsor.com
+		</p>
+	</div>
+
+
+           <link rel="stylesheet" href="sources/styles/owl.carousel.min.css">
+	<script src="sources/scripts/jquery.js"></script>
+        <script src="sources/scripts/owl.carousel.js"></script>
+	<script src="sources/scripts/main.js"></script>
+
+    <script type="text/javascript" src="index.js">
+
+    </script>
+  </body>
+</html>
